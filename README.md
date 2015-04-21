@@ -16,7 +16,13 @@ April 19:
                   Choose the first way as you search a lot
 
 2. How to implement Indri part?: it spends me a lot of time!
-    
+   input: query, docid
+   output: score
+   Step1: 
 3. TermOverlap : Basically, you go through the query terms and count the number of terms that match the document (by going through the stems from the term vector).
 The term overlap will be the number of terms that match the document divided by the total number of query terms.
 4. Problem: java heap : xmx- 2g
+5. Process cmdProc=Runtime.getRuntime().exec(new String[]{r.svmRankLearnPath,"-c",String.valueOf(r.svmRankParamC)
+        ,"HW5-train-0.LeToRTrain",r.svmRankModelFile});
+
+  FileNoTfOUND eXCEPTION
